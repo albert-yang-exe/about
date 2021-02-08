@@ -174,9 +174,10 @@ footer {
 	  let hrs = date.getHours();
 	  let mins = date.getMinutes();
 	  let secs = date.getSeconds();
-	  let year = date.getFullYear();
-	  let days = date.getDate();
-	  let month = date.getDate();
+	  let year = date.getFullYear() - 2005;
+	  let days = date.getDate() - 25;
+	  let month = date.getMonth() - 9;
+	  let 
 	  let period = "AM";
 	
 	  if (hrs == 0) hrs = 12;
@@ -184,6 +185,7 @@ footer {
 		hrs = hrs - 12;
 		period = "PM";
 	  }
+	  
 	
 	  hrs = hrs < 10 ? `0${hrs}` : hrs;
 	  mins = mins < 10 ? `0${mins}` : mins;

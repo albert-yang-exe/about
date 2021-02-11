@@ -192,7 +192,7 @@ footer {
 	  secs = secs < 10 ? `0${secs}` : secs;
 	  total = total < 10 ? `0${total}` : total;
 	
-	  let time = `${hrs}:${mins}:${total} ${period}`;
+	  let time = `${total} `;
 	  setInterval(clock, 1000);
 	  document.getElementById("clock").innerText = time;
 	}

@@ -177,7 +177,7 @@ footer {
 	  let year = date.getFullYear() - 2005;
 	  let days = date.getDate() - 25;
 	  let month = date.getMonth() - 9;
-	  let 
+	  let total = year*365*24*60*60 + days*24*60*60 + month*30*24*60*60;
 	  let period = "AM";
 	
 	  if (hrs == 0) hrs = 12;
@@ -190,8 +190,9 @@ footer {
 	  hrs = hrs < 10 ? `0${hrs}` : hrs;
 	  mins = mins < 10 ? `0${mins}` : mins;
 	  secs = secs < 10 ? `0${secs}` : secs;
+	  total = total < 10 ? `0${total}` : total;
 	
-	  let time = `${hrs}:${mins}:${secs} ${period}`;
+	  let time = `${hrs}:${mins}:${total} ${period}`;
 	  setInterval(clock, 1000);
 	  document.getElementById("clock").innerText = time;
 	}

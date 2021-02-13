@@ -188,34 +188,6 @@ footer {
 	
 	clock();
 	</script> 
-	<p>Number of seconds I have enjoyed</p>
-	<div id="clock">
-	</div>
-	
-	<script>
-	  function clock() {
-	  let date = new Date();
-	  let hrs = date.getHours();
-	  let mins = date.getMinutes();
-	  let secs = date.getSeconds();
-	  let year = date.getFullYear() - 2005;
-	  let days = date.getDate() - 25;
-	  let month = date.getMonth() - 9;
-	  let total = year*365*24*60*60 + days*24*60*60 + month*30*24*60*60 + hrs*60*60+ mins*60 + secs ;
- 
-	
-	  hrs = hrs < 10 ? `0${hrs}` : hrs;
-	  mins = mins < 10 ? `0${mins}` : mins;
-	  secs = secs < 10 ? `0${secs}` : secs;
-	  total = total < 10 ? `0${total}` : total;
-	
-	  let time = `${total}`;
-	  setInterval(clock, 1000);
-	  document.getElementById("clock").innerText = time;
-	}
-	
-	clock();
-	</script>
 	<p> my epic gamer chess rating</p>
 	<p> 1500</p>
 	<p> number of epic gamer friends </p>
